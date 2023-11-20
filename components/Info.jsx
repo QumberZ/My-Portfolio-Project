@@ -18,6 +18,13 @@ import "./text.css";
 
 
     <div>
+       <animated.div
+                  style={cardAnimationProps}
+                  className="animated-card2"
+                >
+                  <h2>{cardTitle}</h2>
+                  <p>{cardDescription}</p>
+                </animated.div>
          <animated.div
                   style={cardAnimationProps}
                   className="animated-card"
@@ -25,6 +32,7 @@ import "./text.css";
                   <h2>{cardTitle}</h2>
                   <p>{cardDescription}</p>
                 </animated.div>
+               
     </div>
 
 

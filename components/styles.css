@@ -1,0 +1,25 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    height: 100%;
+    background-color: #333;
+  }
+  
+  .word {
+    margin: 20px 0; /* Adjust margin-top to move the text down */
+    color: #8f71cf; /* Change color to green, you can use any color code */
+    font: 700 normal 1.5em 'tahoma'; /* Adjust font size to make it smaller */
+    text-shadow: 2px 1px #222324, 1px 2px #222324, 1.5px 2.5px #222324; /* Adjust text-shadow */
+  
+    /* Add some properties for a bubbly effect */
+    transition: transform 0.3s ease-in-out; /* Add transition for a smooth effect */
+  }
+  
+  /* Add hover effect for a more interactive bubbly feel */
+  .word:hover {
+    transform: scale(1.1);
+  }
+  

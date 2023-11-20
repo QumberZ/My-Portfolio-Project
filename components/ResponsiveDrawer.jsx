@@ -22,6 +22,7 @@ import { MovingText, MovingComponent, Letters } from "react-moving-text";
 import Profile from "./Profile";
 import Info from "./Info";
 import { useSpring, animated } from "react-spring";
+import WordFlicker from "./WordFlicker";
 
 const drawerWidth = 240;
 
@@ -229,9 +230,7 @@ function MiniDrawer() {
                 {/* Add the animated card component here */}
 
                 <Info />
-                <br />
-                <Info />
-            
+              
               </div>
             </div>
           </div>
