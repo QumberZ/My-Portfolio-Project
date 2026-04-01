@@ -3,7 +3,7 @@ import './styles.css'; // Import the CSS file
 
 const words = [
    'About Me!',
-  'I am a Computer Science major at the College of Staten Island',
+  'I am a Computer Science Graduate',
   'Aspiring to be a Cyber Security Analyst / Software Developer',
   'I like to play Basketball',
   'Workout',

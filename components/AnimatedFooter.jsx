@@ -1,7 +1,6 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
-import Page1 from "./Page1";
-// ... (imports)
+import FooterInitials from "./FooterInitials";
 
 const AnimatedFooter = () => {
   const footerAnimationProps = useSpring({
@@ -14,15 +13,13 @@ const AnimatedFooter = () => {
       style={{
         ...footerAnimationProps,
         position: "fixed",
-        bottom: 0,
-        right: 0,
-        p: 2,
-        zIndex: 1000, // Add this line
+        bottom: 20,
+        right: 20,
+        zIndex: 20,
+        pointerEvents: "auto",
       }}
     >
-      <Page1>
-        <a href="mailto:qumber.zaidi@cix.csi.cuny.edu"></a>
-      </Page1>
+      <FooterInitials />
     </animated.div>
   );
 };

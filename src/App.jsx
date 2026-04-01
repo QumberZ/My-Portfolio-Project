@@ -1,90 +1,26 @@
-import { useState, } from 'react'
-import './App.css'
-  import ResponsiveDrawer from '../components/ResponsiveDrawer.jsx'
-  import AnimatedFooter from '../components/AnimatedFooter';
-  import Info from '../components/Info';
-import { Drawer } from '@mui/material'
-import MovingText from 'react-moving-text'
-import Page1 from '../components/Page1'
-import Profile from '../components/Profile'
-import Page2 from '../components/Page2.jsx';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import ResponsiveDrawer from "../components/ResponsiveDrawer.jsx";
+import AnimatedFooter from "../components/AnimatedFooter";
 
 function App() {
-
-
   return (
-<div>
-  
-<ResponsiveDrawer/>
+    <BrowserRouter>
+      <>
+        <div className="background">
+          {Array.from({ length: 50 }).map((_, i) => (
+            <span key={i}></span>
+          ))}
+        </div>
 
-
-    <div className="App">
-      
-    <div className="background">
-    <ResponsiveDrawer/>
-    {/* <Page2/> */}
-    <AnimatedFooter />
-    
-   <span> </span>
-   
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-   <span></span>
-
-
-</div>
-
-
-    </div>
-
-    </div>
-  )
+        <div className="main-content">
+          <ResponsiveDrawer />
+          <AnimatedFooter />
+        </div>
+      </>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
