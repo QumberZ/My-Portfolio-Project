@@ -22,6 +22,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-moving-text": "^0.0.7",
+    "react-rounded-image": "^2.0.15",
     "react-router-dom": "^7.13.1",
     "react-spring": "^9.7.3",
     "sass": "^1.58.1",
